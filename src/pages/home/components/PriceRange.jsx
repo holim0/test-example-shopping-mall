@@ -16,6 +16,7 @@ const PriceRange = ({ onChangeMinPrice, onChangeMaxPrice }) => {
         <FormControl sx={{ mr: 1, mt: 1, width: '15ch' }} variant="outlined">
           <OutlinedInput
             placeholder="최소 금액"
+            name="minPrice"
             size="small"
             endAdornment={<InputAdornment position="end">$</InputAdornment>}
             onChange={onChangeMinPrice}
@@ -27,6 +28,7 @@ const PriceRange = ({ onChangeMinPrice, onChangeMaxPrice }) => {
         <FormControl sx={{ ml: 1, mt: 1, width: '15ch' }} variant="outlined">
           <OutlinedInput
             placeholder="최대 금액"
+            name="maxPrice"
             size="small"
             endAdornment={<InputAdornment position="end">$</InputAdornment>}
             onChange={onChangeMaxPrice}

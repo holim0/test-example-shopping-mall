@@ -27,6 +27,7 @@ const CategoryRadioGroup = ({ categoryId, onChangeCategory }) => {
           control={<Radio />}
           id="All"
           label="All"
+          role="label"
         />
         {data?.map(({ id, name }) => {
           return (
@@ -36,6 +37,7 @@ const CategoryRadioGroup = ({ categoryId, onChangeCategory }) => {
               id={id}
               control={<Radio />}
               label={name}
+              role="label"
             />
           );
         })}
