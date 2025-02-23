@@ -47,6 +47,7 @@ const ProductInfoTableRow = ({
           onChange={handleChangeCount(id)}
           defaultValue={count}
           size="small"
+          data-testid="count-input"
           sx={{ width: '10ch' }}
           InputProps={{
             endAdornment: <InputAdornment position="end">개</InputAdornment>,
